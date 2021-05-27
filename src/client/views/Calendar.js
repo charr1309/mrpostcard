@@ -24,6 +24,7 @@ export default class Calendar extends Component {
             Pricing: Click here.
           </p>
         </div>
+        
       </FadeIn>
     );
   }
