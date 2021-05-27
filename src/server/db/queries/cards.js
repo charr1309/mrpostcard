@@ -1,25 +1,25 @@
-const { Query } = require("../models");
+import Query from "../models";
 
-const getRealCards = () => {
-    return Query("SELECT * FROM  cards WHERE code = 100")
+const getRealCards = (code) => {
+    return Query("SELECT * FROM  cards WHERE code = ?", [code])
 };
-const getCalenderCards = () => {
-    return Query("SELECT * FROM  cards WHERE code = 200")
-};
-
-const getSportsCards = () => {
-    return Query("SELECT * FROM  cards WHERE code = 300")
+const getCalenderCards = (code) => {
+    return Query("SELECT * FROM  cards WHERE code = ?", [code])
 };
 
-const getHolidayCards = () => {
-    return Query("SELECT * FROM  cards WHERE code = 400")
+const getSportsCards = (code) => {
+    return Query("SELECT * FROM  cards WHERE code = ?", [code])
 };
 
-const getBusinessCards = () => {
-    return Query("SELECT * FROM  cards WHERE code = 500")
+const getHolidayCards = (code) => {
+    return Query("SELECT * FROM  cards WHERE code = ?", [code])
 };
 
-module.exports = {
+const getBusinessCards = (code) => {
+    return Query("SELECT * FROM  cards WHERE code = ?", [code])
+};
+
+export default {
     getRealCards,
     getCalenderCards,
     getSportsCards,

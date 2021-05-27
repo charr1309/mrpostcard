@@ -1,6 +1,6 @@
 import About from "./About";
 import BusinessCards from "./BusinessCards";
-import Calender from "./Calender";
+import Calender from "./Calendar";
 import Contact from "./Contact";
 import FullColor from "./FullColor";
 import Holiday from "./Holiday";
@@ -29,7 +29,7 @@ export const routes = [
     title: "BusinessCards",
   },
   {
-    path: "/Calender",
+    path: "/Calendar",
     Component: Calender,
     title: "Calender",
   },

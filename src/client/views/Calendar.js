@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FadeIn from "react-fade-in";
-export default class Calender extends Component {
+export default class Calendar extends Component {
   render() {
     return (
       <FadeIn>

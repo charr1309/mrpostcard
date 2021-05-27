@@ -1,30 +1,40 @@
-import React from "react";
+import React, {Component} from 'react';
+import TopNav from "./components/TopNav";
+import MainNav from "./components/MainNav";
+import "./scss/MainNav.scss";
 
-const App = () => {
-  const [products, setProducts] = React.useState([]);
 
-  React.useEffect(() => {
-    fetch("/api/products")
-      .then((res) => res.json())
-      .then((products) => setProducts(products));
-  }, []);
+import Login from "./views/Login";
+import { routes } from "./views/Index";
+import "./scss/Login.scss";
+import { Switch, Route } from "react-router-dom";
 
+function App() {
   return (
-    <main className="container">
+    <div className="container">
       <div>
-        <h1>Products</h1>
-        <ul className="list-group-flush">
-          {products.map((p) => {
-            return (
-              <li key={p.ProductID} className="list-group-item">
-                {p.Name}
-              </li>
-            );
-          })}
-        </ul>
+        <TopNav />
       </div>
-    </main>
+      <div>
+        <Login />
+      </div>
+      <div>
+        <img src={ "../images/logo.png" } alt="logo" />
+      </div>
+      <div>
+        <MainNav />
+      </div>
+      <Switch>
+        {routes.map((route) => {
+          return (
+            <Route exact path={route.path}>
+              {<route.Component />} {/*just calling a function accept use angle brackets*/}
+            </Route>
+          );
+        })}
+      </Switch>
+    </div>
   );
-};
+}
 
 export default App;

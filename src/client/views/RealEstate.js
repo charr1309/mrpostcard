@@ -1,10 +1,34 @@
+
 import React, { Component } from "react";
 import FadeIn from "react-fade-in";
 
 export default class RealEstate extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      postcards: []
+    }
+  }
+  componentDidMount(){
+    fetch("/api/cards/100").then ((res) => {return res.json()}).then((data) => 
+    {this.setState (
+      {
+        postcards: data
+      })
+    }
+    )    
+    .catch((error) => {
+      console.log(error);
+    });
+  }
+
+  
   render() {
     return (
       <FadeIn>
+        {this.state.postcards.map((card) => {
+          return <img src={card.image}/>
+        })}
         <div>
           <h1>Real Estate Pre-Printed Postcards</h1>
           <h2>

@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import "./TopNav.css";
+import "../scss/TopNav.scss";
 
 class TopNav extends Component {
   render() {
     return (
       <div>
-        <div classname="Navbar-top">
+        <div className="Navbar-top">
           <div className="Top-menu">
             <NavLink className="items" to="/">
               Home

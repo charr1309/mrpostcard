@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import "../scss/MainNav.scss";
 
 class MainNav extends Component {
   render() {
@@ -10,8 +11,8 @@ class MainNav extends Component {
             <NavLink className="Main-item" to="/RealEstate">
               Real Estate Postcards
             </NavLink>
-            <NavLink className="Main-item" to="/Calender">
-              Monthly Calender Postcards
+            <NavLink className="Main-item" to="/Calendar">
+              Monthly Calendar Postcards
             </NavLink>
             <NavLink className="Main-item" to="/Sports">
               Sports Schedule Postcards
