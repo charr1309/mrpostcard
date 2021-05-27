@@ -39,6 +39,14 @@ const clientConfig = {
         use: ["babel-loader"],
       },
       {
+        test: /\.(png|jpe?g|jpg)/,
+        use: ["resolve-url-loader"],
+      },
+      {
+        test: /\.svg/,
+        use: ["svg-url-loader"],
+      },
+      {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
