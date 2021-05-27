@@ -1,0 +1,28 @@
+body {
+  font-family: "Open Sans Condensed", sans-serif;
+  margin: auto;
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.container {
+  width: 95%;
+  margin-left: 20px;
+}
+
+.Navbar-top {
+  height: 40px;
+  padding-bottom: 10px;
+}
+.items {
+  display: flex;
+  height: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  /* border: 1px solid black; */
+}
+
+.Top-menu {
+  display: flex;
+}
