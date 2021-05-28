@@ -26,10 +26,8 @@ export default class RealEstate extends Component {
   render() {
     return (
       <FadeIn>
-        {this.state.postcards.map((card) => {
-          return <img src={card.image}/>
-        })}
-        <div>
+        <div className="pageStyle">
+        
           <h1>Real Estate Pre-Printed Postcards</h1>
           <h2>
             Mail 100 pre-printed postcards for just $75, all costs included.
@@ -47,6 +45,11 @@ export default class RealEstate extends Component {
             Order now:<br></br>
             By phone - 404.849.6139 · By email - info@mrpostcard.com
           </p>
+        </div>
+        <div className="positionImage" >
+        {this.state.postcards.map((card) => {
+          return <img src={card.image}/>
+        })}
         </div>
       </FadeIn>
     );
