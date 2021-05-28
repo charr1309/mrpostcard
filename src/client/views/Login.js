@@ -1,7 +1,18 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import { routes } from "../views/Index";
 
 class Login extends Component {
-  render() {
+    constructor(props) {
+      super(props);
+      this.state = {
+        
+        
+      }
+      
+    }
+    
+render() {
     return (
       <div>
         <form className="Login">
@@ -18,7 +29,10 @@ class Login extends Component {
           />
           <br />
           <button type="submit">Submit</button>
-          <button type="submit" id="signup">
+          <button type="submit" id="signup" onClick={() => ({
+              // <Route exact path={route.path}>
+              // {<route.Component />}
+          })}>
             Create Account
           </button>
         </form>

@@ -11,6 +11,7 @@ import RealEstate from "./RealEstate";
 import Sports from "./Sports";
 import Websites from "./Websites";
 import SiteNewsletter from "./SiteNewsletter";
+import CreateAccount from "./CreateAccount";
 
 export const routes = [
   {
@@ -78,4 +79,9 @@ export const routes = [
     Component: About,
     title: "About",
   },
+  {
+    path: "/CreateAccount",
+    Component: CreateAccount,
+    title: "CreateAccount",
+  }
 ];
