@@ -2,9 +2,28 @@ import React, { Component } from "react";
 import FadeIn from "react-fade-in";
 
 export default class BusinessCards extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      postcards: []
+    }
+  }
+  componentDidMount(){
+    fetch("/api/cards/500").then ((res) => {return res.json()}).then((data) => 
+    {this.setState (
+      {
+        postcards: data
+      })
+    }
+    )    
+    .catch((error) => {
+      console.log(error);
+    });
+  }  
   render() {
     return (
       <FadeIn>
+         <section className="Hol-container">
         <div>
           <h1>Custom BusinessCards</h1>
           <h2>
@@ -19,6 +38,12 @@ export default class BusinessCards extends Component {
           <p>Pricing: Click here</p>
           <p>A few samples of our work--Click image to enlarge</p>
         </div>
+        <div className="positionImage" >
+        {this.state.postcards.map((card) => {
+          return <img src={card.image}/>
+        })}
+        </div>
+        </section>
       </FadeIn>
     );
   }

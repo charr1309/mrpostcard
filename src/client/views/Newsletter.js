@@ -5,6 +5,7 @@ export default class Newsletter extends Component {
   render() {
     return (
       <FadeIn>
+        <section className="Cus-container">
         <div>
           <h1>Custom Flyers, Newsletters, Folders, Etc.</h1>
           <h2>
@@ -17,6 +18,8 @@ export default class Newsletter extends Component {
           </p>
           <p>Pricing: Click here.</p>
         </div>
+        <img src="https://braggmedia.com/wp-content/uploads/2018/11/newsletter-graphic-design.jpg"/>
+        </section>
       </FadeIn>
     );
   }

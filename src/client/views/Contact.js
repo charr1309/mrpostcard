@@ -5,6 +5,7 @@ class Contact extends Component {
     return (
       <div>
         <FadeIn>
+        <section className="Cal-container">
           <div>
             <h1>Contact Mr. PostCard</h1>
             <p>Phone: 404.849.6139</p>
@@ -69,6 +70,8 @@ class Contact extends Component {
               <button type="Submit">Submit</button>
             </form>
           </div>
+          <img src="https://www.multimediagraphics.net/wp-content/uploads/2015/10/Contact-us.jpg"/>
+          </section>
         </FadeIn>
       </div>
     );

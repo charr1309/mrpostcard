@@ -5,6 +5,7 @@ export default class Mailing extends Component {
   render() {
     return (
       <FadeIn>
+         <section className="mail-container">
         <div>
           <h1>Mailing Services</h1>
           <h2>
@@ -81,6 +82,7 @@ export default class Mailing extends Component {
             Order Now: By phone - 404.849.6139- By email- info@mrpostcard.com
           </p>
         </div>
+        </section>
       </FadeIn>
     );
   }

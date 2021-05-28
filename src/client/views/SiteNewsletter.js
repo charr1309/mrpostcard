@@ -5,6 +5,7 @@ export default class SiteNewsletter extends Component {
   render() {
     return (
       <FadeIn>
+         <section className="Cus-container">
         <div>
           <div>
             <h1>Newsletter & Marketing Resources:</h1>
@@ -26,6 +27,8 @@ export default class SiteNewsletter extends Component {
             </h2>
           </div>
         </div>
+        <img src="https://thumbs.dreamstime.com/b/newsletter-blue-banner-image-text-envelop-icon-32476676.jpg"/>
+        </section>
       </FadeIn>
     );
   }

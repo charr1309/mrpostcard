@@ -20,14 +20,12 @@ export default class RealEstate extends Component {
     .catch((error) => {
       console.log(error);
     });
-  }
-
-  
+  }  
   render() {
     return (
       <FadeIn>
-        <div className="pageStyle">
-        
+         <section className="Hol-container">
+        <div className="pageStyle">        
           <h1>Real Estate Pre-Printed Postcards</h1>
           <h2>
             Mail 100 pre-printed postcards for just $75, all costs included.
@@ -51,6 +49,7 @@ export default class RealEstate extends Component {
           return <img src={card.image}/>
         })}
         </div>
+        </section>
       </FadeIn>
     );
   }

@@ -21,7 +21,28 @@ router.get("/cards/:code?", async (req, res, next) => {
         next(error);
     }
 });
-
+router.get("/cards/:code?", async (req, res, next) => {
+  try{
+      let {code} = req.params;
+     
+      let imageURL = await cards.getCalendarCards(code);
+      
+    res.status(200).json(imageURL);
+  } catch (error) {
+      next(error);
+  }
+});
+router.get("/cards/:code?", async (req, res, next) => {
+  try{
+      let {code} = req.params;
+     
+      let imageURL = await cards.getHolidayCards(code);
+      
+    res.status(200).json(imageURL);
+  } catch (error) {
+      next(error);
+  }
+});
 
 
 export default router;

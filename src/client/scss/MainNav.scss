@@ -15,13 +15,79 @@
   .positionImage{
     width: 300px;
     height: 300px;
+    display: flex;    
+  }
+  .Cal-container{
     display: flex;
-   
+    justify-content: space-evenly;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    border-top: 2px solid black;
   }
-  .pageStyle {
-    text-align: center;
-    border-top: 3px solid black;
+  .Cal-container div{
+    width: 300px;
+    height: 300px;
   }
+  .Cal-container img{
+    display: flex;
+    align-self: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .Hol-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    border-top: 2px solid black;
+    
+  }
+  
+  .Hol-container div{
+    width: 250px;
+    height: 300px;
+    padding-right: 20px;
+  }
+  .Hol-container img{
+    display: flex;
+    margin-top: 20px;
+    width: 288px;
+    height: 288px;
+  }
+  .Cus-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    border-top: 2px solid black;
+    justify-content: space-around;
+  }
+  .Cus-container div{
+    width: 250px;
+    height: 300px;
+    padding-right: 20px;
+    
+  }
+  .Cus-container img{
+    margin-top: 20px;
+    display: flex;
+    
+    width: 600px;
+    height: 300px;
+  }
+  .mail-container{
+    display: flex;
+    
+    width: 95%;
+    
+    margin: auto;
+    border-top: 2px solid black;
+  }
+  
   
   .Main-item  {
     display: flex;
@@ -30,8 +96,12 @@
     padding-left: 20px;
     text-decoration: none;
     border-left: 1px solid black;
-    border-right: 1px solid black;
-    
+    border-right: 1px solid black;    
+  }
+  .Main-item:hover{
+    transition: background-color 1s ease;    
+    background-color: blue;
+    color: white;
   }
   
   .menu {  
