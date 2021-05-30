@@ -19,15 +19,15 @@ function App() {
         <Login />
       </div>
       <div>
-        <img src={ "../images/logo.png" } alt="logo" />
+        <img className="logoStyle" src={ "../images/logo.png" } alt="logo" />
       </div>
       <div>
         <MainNav />
       </div>
       <Switch>
-        {routes.map((route) => {
+        {routes.map((route, index) => { /*use index for key since you dont have id's index is a variable so we need curly braces*/
           return (
-            <Route exact path={route.path}>
+            <Route key={index} exact path={route.path}>
               {<route.Component />} {/*just calling a function accept use angle brackets*/}
             </Route>
           );

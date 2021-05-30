@@ -34,17 +34,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ msg: "Something went wrong :(" });
 });
 
-app.post("/api/insert", (req,res) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  const email = req.body.email;
-  const signup = req.body.signup;
-  
-  const sqlInsert = "INSERT INTO customers (username,password, email, signup) VALUES (?,?,?,?)"
-  db.query(sqlInsert, [username, password, email, signup], (err, result) => {
 
-  })
-})
 
 app.listen(config.port, () =>
   console.log(`Server listening on port ${config.port}...`)

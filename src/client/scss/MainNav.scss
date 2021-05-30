@@ -116,3 +116,32 @@
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
+  .form-container{
+    // display: flex;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: burlywood;
+  }
+  .button{
+    width: 75px;
+    height: 10px;
+    background-color: #efefef;
+    border: 1px solid black;
+    border-radius: 2px;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+    margin-top: 115px;
+  }
+  .border-line{
+    width: 95%;
+    margin: auto;
+    border-top: 2px solid black
+  }
+  .logoStyle{
+    padding-bottom: 20px;
+    padding-left: 18px;
+  }

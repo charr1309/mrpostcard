@@ -1,5 +1,6 @@
 import express from "express";
 import cards from '../db/queries/cards'
+import customers from '../db/queries/customers'
 
 
 const router = express.Router();
@@ -42,6 +43,17 @@ router.get("/cards/:code?", async (req, res, next) => {
   } catch (error) {
       next(error);
   }
+});
+router.post("/insert", async (req,res,next) => {
+  try{
+    let response = await customers.insertCustomer(req.body)
+    res.json(response); 
+  }catch(error){
+    next(error);
+  }
+
+  
+  
 });
 
 

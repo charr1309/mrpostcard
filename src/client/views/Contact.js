@@ -53,7 +53,7 @@ class Contact extends Component {
               </label>
               <br></br>
               <select id="referral" name="referral">
-                <br></br>
+                
                 <option value="referral">Referral</option>
                 <option value="postcard">Received someones postcard</option>
                 <option value="Received mailer from us">

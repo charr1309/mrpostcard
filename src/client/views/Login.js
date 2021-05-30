@@ -28,13 +28,9 @@ render() {
             placeholder="password"
           />
           <br />
+          
           <button type="submit">Submit</button>
-          <button type="submit" id="signup" onClick={() => ({
-              // <Route exact path={route.path}>
-              // {<route.Component />}
-          })}>
-            Create Account
-          </button>
+          <NavLink  className="button" id="signup" to= "/CreateAccount">Create Account</NavLink>
         </form>
       </div>
     );

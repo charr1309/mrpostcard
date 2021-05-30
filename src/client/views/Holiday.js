@@ -38,8 +38,8 @@ export default class Holiday extends Component {
           </p>
         </div>
         <div className="positionImage" >
-        {this.state.postcards.map((card) => {
-          return <img src={card.image}/>
+        {this.state.postcards.map((card) => {//renders a list...need a key
+          return <img key={card.id} src={card.image}/>//access value inside of card.id so need curly braces
         })}
         </div>
         </section>

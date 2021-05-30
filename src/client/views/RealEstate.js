@@ -46,7 +46,7 @@ export default class RealEstate extends Component {
         </div>
         <div className="positionImage" >
         {this.state.postcards.map((card) => {
-          return <img src={card.image}/>
+          return <img key={card.id} src={card.image}/>
         })}
         </div>
         </section>
