@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
+  "homepage": "https://charr1309.github.io/mrpostcard/",
   "scripts": {
     "watch:build": "npx webpack -w",
     "watch:server": "nodemon dist/server.js",
+    "predeploy": 
     "dev": "npm-run-all --parallel watch:*",
     "start": "node dist/server.js"
   },
